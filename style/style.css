@@ -33,6 +33,7 @@ body {
 .flexChild {
 	background-color: purple;
 	margin: 5px;
+	text-align: center;
 }
 
 .footer {

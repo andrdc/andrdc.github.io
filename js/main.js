@@ -55,7 +55,7 @@ cppTyra = new Project(
 cppPE = new Project(
 	"cppPE",
 	"Programming Exercises",
-	"https://andrsrz.github.io/programming-exercises",
+	"https://andrsrz.github.io/programming-exercises/",
 	"Learn C++ and improve your problem solving skill",
 	["C++"],
 	"cpp"
@@ -82,7 +82,7 @@ javaTyra = new Project(
 javaGraf = new Project(
 	"javaGraf",
 	"Graficas por Computadora 2D y 3D",
-	"https://github.com/Andrsrz/graficas-por-computadora-2D-3",
+	"https://github.com/Andrsrz/graficas-por-computadora-2D-3D/",
 	"",
 	["Java"],
 	"java"
@@ -91,7 +91,7 @@ javaGraf = new Project(
 javaCompPar = new Project(
 	"javaCompPar",
 	"Computaci&oacute;n Paralela",
-	"https://github.com/Andrsrz/computacion-paralela",
+	"https://github.com/Andrsrz/computacion-paralela/",
 	"",
 	["Java"],
 	"java"
@@ -100,7 +100,7 @@ javaCompPar = new Project(
 pyIoT = new Project(
 	"pyIoT",
 	"Internet of Things",
-	"https://github.com/Andrsrz/tecnologias-emergente",
+	"https://github.com/Andrsrz/tecnologias-emergentes/",
 	"",
 	["Python", "Java", "Raspberry Pi", "AWS"],
 	"python"
@@ -110,6 +110,7 @@ const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webEEMX, webAlc];
 const CPP_PROJECTS = [cppTyra, cppPE, cppSDLE];
 const JAVA_PROJECTS = [javaTyra];
 const SCHOOL_PROJECTS = [javaGraf, javaCompPar, pyIoT];
+const PROJECTS = [WEB_PROJECTS, CPP_PROJECTS, JAVA_PROJECTS, SCHOOL_PROJECTS];
 const WEB_FLEX_ID = "webProjects";
 const CPP_FLEX_ID = "cppProjects";
 const JAVA_FLEX_ID = "javaProjects";
@@ -126,11 +127,11 @@ function createDiv(whichFlex, project){
 	let title = document.createElement("h3");
 	title.innerHTML = project.name;
 	newDiv.appendChild(title);
-	for(let i = 0; i < project.tech.length; i++){
-		let techUsed = document.createElement("h5");
-		techUsed.innerHMTL = project.tech[i];
+	/* for(let i = 0; i < project.tech.length; i++){ */
+		let techUsed = document.createElement("p");
+		techUsed.innerHMTL = project.description;
 		newDiv.appendChild(techUsed);
-	}
+	/* } */
 }
 
 function createFlex(projects, whichFlex){
@@ -139,10 +140,20 @@ function createFlex(projects, whichFlex){
 	}
 }
 
+function getUrlArr(projects){
+	let urlArr = [];
+	for(let i = 0; i < projects.length; i++){
+		for(let j = 0; j < projects[i].length; j++){
+			urlArr.push(projects[i][j].url);
+		}
+	}
+	return urlArr;
+}
+
 function hoverListener(){
-	let allCells = document.querySelectorAll(".cell");
-	return allCells.forEach((cell) =>
-		cell.addEventListener("mouseover", function (e) {
+	let allChilds = document.querySelectorAll(".flexChild")
+	return allChilds.forEach((child) =>
+		child.addEventListener("click", function (e) {
 		}));
 }
 
