@@ -140,21 +140,13 @@ function createFlex(projects, whichFlex){
 	}
 }
 
-function getUrlArr(projects){
-	let urlArr = [];
+function setOnClickEvents(projects){
 	for(let i = 0; i < projects.length; i++){
 		for(let j = 0; j < projects[i].length; j++){
-			urlArr.push(projects[i][j].url);
+			let div = document.getElementById("div" + projects[i][j].id);
+			div.setAttribute("onclick", "window.open('" + projects[i][j].url + "', '_blank')");
 		}
 	}
-	return urlArr;
-}
-
-function hoverListener(){
-	let allChilds = document.querySelectorAll(".flexChild")
-	return allChilds.forEach((child) =>
-		child.addEventListener("click", function (e) {
-		}));
 }
 
 /* Populate web page dynamically */
@@ -162,3 +154,4 @@ createFlex(WEB_PROJECTS, WEB_FLEX_ID);
 createFlex(CPP_PROJECTS, CPP_FLEX_ID);
 createFlex(JAVA_PROJECTS, JAVA_FLEX_ID);
 createFlex(SCHOOL_PROJECTS, SCHOOL_FLEX_ID);
+setOnClickEvents(PROJECTS);
