@@ -23,31 +23,16 @@ body {
 	background: #D87606;
 }
 
-.container {
-	display: grid;
-	align-items: center;
-	justify-items: center;
+.flexContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px;
 }
 
-.grid {
-	display: grid;
-	height: 1000px;
-	width: 500px;
-}
-
-.cell {
+.flexChild {
 	background-color: white;
-}
-
-h1 {
-	text-align: center;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-						  supported by Chrome, Opera and Firefox */
+	margin: 5px;
 }
 
 .footer {
