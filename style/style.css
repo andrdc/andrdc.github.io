@@ -56,6 +56,10 @@ body {
 	background: #0868D6
 }
 
+p {
+	background-color: orange;
+}
+
 h1, h3, h4, p {
 	text-align: center;
 	-webkit-touch-callout: none; /* iOS Safari */

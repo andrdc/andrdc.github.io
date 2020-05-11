@@ -4,7 +4,7 @@ webRPSGame = new Project(
 	"https://andrsrz.github.io/rock-paper-scissors/",
 	"Web game implementing Rock, Paper, Scissors and a little more.",
 	["HTML 5", "CSS 3", "JavaScript"],
-	"web"
+	"Web"
 );
 
 webEaS = new Project(
@@ -13,7 +13,7 @@ webEaS = new Project(
 	"https://andrsrz.github.io/etch-a-sketch/",
 	"Web drawing tool",
 	["HTML 5", "CSS 3", "JavaScript"],
-	"web"
+	"Web"
 );
 
 webCalc = new Project(
@@ -22,7 +22,7 @@ webCalc = new Project(
 	"https://andrsrz.github.io/calculator/",
 	"Web Calculator",
 	["HTML 5", "CSS 3", "JavaScript"],
-	"web"
+	"Web"
 );
 
 webEEMX = new Project(
@@ -31,7 +31,7 @@ webEEMX = new Project(
 	"https://equipoelectrico.com.mx",
 	"",
 	["HTML 5", "CSS 3", "JavaScript", "Apache 2"],
-	"web"
+	"Web"
 );
 
 webAlc = new Project(
@@ -40,7 +40,7 @@ webAlc = new Project(
 	"https://alcanum.com",
 	"",
 	["HTML 5", "CSS 3", "JavaScript"],
-	"web"
+	"Web"
 );
 
 cppTyra = new Project(
@@ -49,7 +49,7 @@ cppTyra = new Project(
 	"https://andrsrz.github.io/tyra/",
 	"Veterinary Management for Linux",
 	["C++", "Qt", "PostgreSQL"],
-	"cpp"
+	"C++"
 );
 
 cppPE = new Project(
@@ -58,7 +58,7 @@ cppPE = new Project(
 	"https://andrsrz.github.io/programming-exercises/",
 	"Learn C++ and improve your problem solving skill",
 	["C++"],
-	"cpp"
+	"C++"
 );
 
 cppSDLE = new Project(
@@ -67,7 +67,7 @@ cppSDLE = new Project(
 	"https://andrsrz.github.io/sdl-examples/",
 	"Examples using Simple Direct Media Layer library",
 	["C++", "SDL2"],
-	"cpp"
+	"C++"
 );
 
 javaTyra = new Project(
@@ -76,7 +76,7 @@ javaTyra = new Project(
 	"https://github.com/Andrsrz/tyra-mobile/",
 	"Tyra client for Android",
 	["Java", "Android"],
-	"java"
+	"Java"
 );
 
 javaGraf = new Project(
@@ -85,7 +85,7 @@ javaGraf = new Project(
 	"https://github.com/Andrsrz/graficas-por-computadora-2D-3D/",
 	"",
 	["Java"],
-	"java"
+	"Java"
 );
 
 javaCompPar = new Project(
@@ -94,16 +94,16 @@ javaCompPar = new Project(
 	"https://github.com/Andrsrz/computacion-paralela/",
 	"",
 	["Java"],
-	"java"
+	"Java"
 );
 
 pyIoT = new Project(
 	"pyIoT",
-	"Internet of Things",
+	"Tecnolog&iacute;as Emergentes",
 	"https://github.com/Andrsrz/tecnologias-emergentes/",
 	"",
 	["Python", "Java", "Raspberry Pi", "AWS"],
-	"python"
+	"Python"
 );
 
 const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webEEMX, webAlc];
@@ -126,6 +126,9 @@ function populateDiv(whichDiv, project){
 		techUsed.innerHTML = project.tech[i];
 		whichDiv.appendChild(techUsed);
 	}
+	let type = document.createElement("h4");
+	type.innerHTML = project.type + " project";
+	whichDiv.appendChild(type);
 }
 
 function createDiv(whichFlex, project){
