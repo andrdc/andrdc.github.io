@@ -31,6 +31,7 @@ body {
 }
 
 .flexChild {
+	background-color: #f3e8fc;
 	border: 5px solid black;
 	margin: 5px;
 	text-align: center;
@@ -54,10 +55,6 @@ body {
 
 .footer a:hover {
 	background: #0868D6
-}
-
-p {
-	background-color: orange;
 }
 
 h1, h3, h4, p {

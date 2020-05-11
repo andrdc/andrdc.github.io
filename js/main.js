@@ -116,19 +116,24 @@ const CPP_FLEX_ID = "cppProjects";
 const JAVA_FLEX_ID = "javaProjects";
 const SCHOOL_FLEX_ID = "schoolProjects";
 const DIV_SIZE = "250px";
+const HTML = "HTML 5";
+const CSS = "CSS 3";
+const JS = "JavaScript";
+const APACHE = "Apache 2";
+const CPP = "C++";
+const PSQL = "PostgreSQL";
+const QT = "Qt";
+const SDL = "SDL2";
+const JAVA = "Java";
+const ANDROID = "Android";
+const PY = "Python";
+const BERRY = "Raspberry Pi";
+const AWS = "AWS";
 
-function populateDiv(whichDiv, project){
-	let title = document.createElement("h3");
-	title.innerHTML = project.name;
-	whichDiv.appendChild(title);
-	for(let i = 0; i < project.tech.length; i++){
-		let techUsed = document.createElement("p");
-		techUsed.innerHTML = project.tech[i];
-		whichDiv.appendChild(techUsed);
+function createFlex(projects, whichFlex){
+	for(let i = 0; i < projects.length; i++){
+		createDiv(whichFlex, projects[i]);
 	}
-	let type = document.createElement("h4");
-	type.innerHTML = project.type + " project";
-	whichDiv.appendChild(type);
 }
 
 function createDiv(whichFlex, project){
@@ -141,9 +146,52 @@ function createDiv(whichFlex, project){
 	populateDiv(newDiv, project);
 }
 
-function createFlex(projects, whichFlex){
-	for(let i = 0; i < projects.length; i++){
-		createDiv(whichFlex, projects[i]);
+function populateDiv(whichDiv, project){
+	let title = document.createElement("h3");
+	title.innerHTML = project.name;
+	whichDiv.appendChild(title);
+	for(let i = 0; i < project.tech.length; i++){
+		let techUsed = document.createElement("p");
+		techUsed.innerHTML = project.tech[i];
+		setParagraphStyle(techUsed, project.tech[i]);
+		whichDiv.appendChild(techUsed);
+	}
+	let type = document.createElement("h4");
+	type.innerHTML = project.type + " project";
+	whichDiv.appendChild(type);
+}
+
+function setParagraphStyle(paragraph, tech){
+	paragraph.style.fontWeight = "bold";
+	paragraph.style.color = "white";
+	if(tech == HTML){
+		paragraph.style.backgroundColor = "#E54E26";
+	}else if(tech == CSS){
+		paragraph.style.backgroundColor = "#006EBA";
+	}else if(tech == JS){
+		paragraph.style.backgroundColor = "#E7C72F";
+		paragraph.style.color = "black";
+	}else if(tech == APACHE){
+		paragraph.style.backgroundColor = "#AC0000";
+	}else if(tech == CPP){
+		paragraph.style.backgroundColor = "#017CC7";
+	}else if(tech == PSQL){
+		paragraph.style.backgroundColor = "#316192";
+	}else if(tech == QT){
+		paragraph.style.backgroundColor = "#41CD52";
+	}else if(tech == SDL){
+		paragraph.style.backgroundColor = "#132B48";
+	}else if(tech == JAVA){
+		paragraph.style.backgroundColor = "#EA2D2F";
+	}else if(tech == ANDROID){
+		paragraph.style.backgroundColor = "#3DDC84";
+		paragraph.style.color = "black";
+	}else if(tech == PY){
+		paragraph.style.backgroundColor = "#3873A3";
+	}else if(tech == BERRY){
+		paragraph.style.backgroundColor = "#C51D4A";
+	}else if(tech == AWS){
+		paragraph.style.backgroundColor = "#E9912F";
 	}
 }
 
