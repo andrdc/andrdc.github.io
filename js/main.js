@@ -117,6 +117,17 @@ const JAVA_FLEX_ID = "javaProjects";
 const SCHOOL_FLEX_ID = "schoolProjects";
 const DIV_SIZE = "250px";
 
+function populateDiv(whichDiv, project){
+	let title = document.createElement("h3");
+	title.innerHTML = project.name;
+	whichDiv.appendChild(title);
+	for(let i = 0; i < project.tech.length; i++){
+		let techUsed = document.createElement("p");
+		techUsed.innerHMTL = project.tech[i];
+		whichDiv.appendChild(techUsed);
+	}
+}
+
 function createDiv(whichFlex, project){
 	let newDiv = document.createElement("div");
 	newDiv.setAttribute("id", "div" + project.id);
@@ -124,14 +135,7 @@ function createDiv(whichFlex, project){
 	newDiv.style.width = DIV_SIZE;
 	newDiv.style.height = DIV_SIZE;
 	document.getElementById(whichFlex).appendChild(newDiv);
-	let title = document.createElement("h3");
-	title.innerHTML = project.name;
-	newDiv.appendChild(title);
-	/* for(let i = 0; i < project.tech.length; i++){ */
-		let techUsed = document.createElement("p");
-		techUsed.innerHMTL = project.description;
-		newDiv.appendChild(techUsed);
-	/* } */
+	populateDiv(newDiv, project);
 }
 
 function createFlex(projects, whichFlex){
