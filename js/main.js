@@ -121,7 +121,6 @@ function populateDiv(whichDiv, project){
 	let title = document.createElement("h3");
 	title.innerHTML = project.name;
 	whichDiv.appendChild(title);
-	let str = "";
 	for(let i = 0; i < project.tech.length; i++){
 		let techUsed = document.createElement("p");
 		techUsed.innerHTML = project.tech[i];
