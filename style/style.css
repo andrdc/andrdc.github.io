@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	font-family: Georgia, serif;
+	background-color: #00A3C1;
 }
 
 .header {
@@ -9,7 +10,7 @@ body {
 	justify-content: flex-start;
 	list-style: none;
 	margin: 0;
-	background: #FC8B0A;
+	background: #0061B5;
 }
 
 .header a {
@@ -20,7 +21,7 @@ body {
 }
 
 .header a:hover {
-	background: #D87606;
+	background: #0868D6;
 }
 
 .flexContainer {
@@ -31,8 +32,9 @@ body {
 }
 
 .flexChild {
-	background-color: #f3e8fc;
-	border: 5px solid black;
+	background-color: #EDEAE0; /* Alabaster */
+	border: 5px outset #070f38;
+	border-radius: 10%;
 	margin: 5px;
 	text-align: center;
 }
@@ -43,7 +45,7 @@ body {
 	justify-content: flex-end;
 	list-style: none;
 	margin-top: auto;
-	background: #0277FC;
+	background: #0061B5;
 }
 
 .footer a {
