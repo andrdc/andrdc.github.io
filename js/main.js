@@ -156,9 +156,6 @@ function populateDiv(whichDiv, project){
 		setParagraphStyle(techUsed, project.tech[i]);
 		whichDiv.appendChild(techUsed);
 	}
-	let type = document.createElement("h4");
-	type.innerHTML = project.type + " project";
-	whichDiv.appendChild(type);
 }
 
 function setParagraphStyle(paragraph, tech){
