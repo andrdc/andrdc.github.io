@@ -25,6 +25,15 @@ webCalc = new Project(
 	"Web"
 );
 
+webPomodoro = new Project(
+	"webPomodoro",
+	"Pomodoro Timer",
+	"https://andrsrz.github.io/pomodoro/",
+	"Web Pomodoro Timer",
+	["HTML 5", "CSS 3", "JavaScript"],
+	"Web"
+);
+
 webEEMX = new Project(
 	"webEEMX",
 	"Equipo El&eacute;ctrico MX",
@@ -106,7 +115,7 @@ pyIoT = new Project(
 	"Python"
 );
 
-const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webEEMX, webAlc];
+const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webPomodoro, webEEMX, webAlc];
 const CPP_PROJECTS = [cppTyra, cppPE, cppSDLE];
 const JAVA_PROJECTS = [javaTyra];
 const SCHOOL_PROJECTS = [javaGraf, javaCompPar, pyIoT];
