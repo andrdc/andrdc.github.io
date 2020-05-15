@@ -55,7 +55,7 @@ webAlc = new Project(
 cppTyra = new Project(
 	"cppTyra",
 	"Tyra",
-	"https://andrsrz.github.io/tyra/",
+	"https://andrsrz.github.io/tyrawebpage/",
 	"Veterinary Management for Linux",
 	["C++", "Qt", "PostgreSQL"],
 	"C++"
@@ -64,7 +64,7 @@ cppTyra = new Project(
 cppPE = new Project(
 	"cppPE",
 	"Programming Exercises",
-	"https://andrsrz.github.io/programming-exercises/",
+	"https://andrsrz.github.io/pewebpage/",
 	"Learn C++ and improve your problem solving skill",
 	["C++"],
 	"C++"
