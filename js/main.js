@@ -168,15 +168,28 @@ function populateDiv(whichDiv, project){
 }
 
 function setParagraphStyle(paragraph, tech){
-	paragraph.style.fontWeight = "bold";
+	let icon = document.createElement("i");
+	icon.style.color = "white";
+	icon.style.fontSize = "25px";
 	paragraph.style.color = "white";
+	paragraph.style.fontWeight = "bold";
+
 	if(tech == HTML){
 		paragraph.style.backgroundColor = "#E54E26";
+		icon.setAttribute("class", "fab fa-html5");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == CSS){
 		paragraph.style.backgroundColor = "#006EBA";
+		icon.setAttribute("class", "fab fa-css3-alt");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == JS){
 		paragraph.style.backgroundColor = "#E7C72F";
-		paragraph.style.color = "black";
+		icon.setAttribute("class", "fab fa-js");
+		icon.style.color = "black";
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == APACHE){
 		paragraph.style.backgroundColor = "#AC0000";
 	}else if(tech == CPP){
@@ -189,16 +202,33 @@ function setParagraphStyle(paragraph, tech){
 		paragraph.style.backgroundColor = "#132B48";
 	}else if(tech == JAVA){
 		paragraph.style.backgroundColor = "#EA2D2F";
+		icon.setAttribute("class", "fab fa-java");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == ANDROID){
 		paragraph.style.backgroundColor = "#3DDC84";
-		paragraph.style.color = "black";
+		icon.setAttribute("class", "fab fa-android");
+		icon.style.color = "black";
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == PY){
 		paragraph.style.backgroundColor = "#3873A3";
+		icon.setAttribute("class", "fab fa-python");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == BERRY){
 		paragraph.style.backgroundColor = "#C51D4A";
+		icon.setAttribute("class", "fab fa-raspberry-pi");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}else if(tech == AWS){
 		paragraph.style.backgroundColor = "#E9912F";
+		icon.setAttribute("class", "fab fa-aws");
+		paragraph.innerHTML = "";
+		paragraph.appendChild(icon);
 	}
+
+	return icon;
 }
 
 function setOnClickEvents(projects){
