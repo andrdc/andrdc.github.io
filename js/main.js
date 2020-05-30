@@ -52,13 +52,13 @@ webAlc = new Project(
 	"Web"
 );
 
-cppTyra = new Project(
-	"cppTyra",
+webTyra = new Project(
+	"webTyra",
 	"Tyra",
-	"https://andrsrz.github.io/tyrawebpage/",
+	"https://andrsrz.github.io/tyra/",
 	"Veterinary Management for Linux",
-	["C++", "Qt", "PostgreSQL"],
-	"C++"
+	["JavaScript", "PostgreSQL"],
+	"Web"
 );
 
 cppPE = new Project(
@@ -77,15 +77,6 @@ cppSDLE = new Project(
 	"Examples using Simple Direct Media Layer library",
 	["C++", "SDL2"],
 	"C++"
-);
-
-javaTyra = new Project(
-	"javaTyra",
-	"Tyra Mobile",
-	"https://github.com/Andrsrz/tyra-mobile/",
-	"Tyra client for Android",
-	["Java", "Android"],
-	"Java"
 );
 
 javaGraf = new Project(
@@ -115,11 +106,10 @@ pyIoT = new Project(
 	"Python"
 );
 
-const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webPomodoro, webEEMX, webAlc];
-const CPP_PROJECTS = [cppTyra, cppPE, cppSDLE];
-const JAVA_PROJECTS = [javaTyra];
+const WEB_PROJECTS = [webRPSGame, webEaS, webCalc, webPomodoro, webEEMX, webAlc, webTyra];
+const CPP_PROJECTS = [cppPE, cppSDLE];
 const SCHOOL_PROJECTS = [javaGraf, javaCompPar, pyIoT];
-const PROJECTS = [WEB_PROJECTS, CPP_PROJECTS, JAVA_PROJECTS, SCHOOL_PROJECTS];
+const PROJECTS = [WEB_PROJECTS, CPP_PROJECTS, SCHOOL_PROJECTS];
 const WEB_FLEX_ID = "webProjects";
 const CPP_FLEX_ID = "cppProjects";
 const JAVA_FLEX_ID = "javaProjects";
@@ -243,6 +233,5 @@ function setOnClickEvents(projects){
 /* Populate web page dynamically */
 createFlex(WEB_PROJECTS, WEB_FLEX_ID);
 createFlex(CPP_PROJECTS, CPP_FLEX_ID);
-createFlex(JAVA_PROJECTS, JAVA_FLEX_ID);
 createFlex(SCHOOL_PROJECTS, SCHOOL_FLEX_ID);
 setOnClickEvents(PROJECTS);
