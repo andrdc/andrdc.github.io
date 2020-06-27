@@ -39,7 +39,7 @@
 			<nav class="tabs">
 				<div class="container">
 					<ul>
-						<li><a>Github</a></li>
+						<li><a :href="githubUrl">Github</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -56,7 +56,8 @@ export default {
 	data(){
 		return {
 			name: 'Andrés Ruiz',
-			title: 'Software Development Engineer'
+			title: 'Software Development Engineer',
+			githubUrl: 'https://github.com/Andrsrz'
 		}
 	}
 }
