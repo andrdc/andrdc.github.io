@@ -1,2 +1,3 @@
-# andrsrz.github.io
-My web site
+# Personal website
+## License
+[MIT](https://mit-license.org/).
