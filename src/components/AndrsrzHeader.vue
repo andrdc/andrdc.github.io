@@ -1,5 +1,5 @@
 <template>
-<div class="site-header">
+<div id="Home" class="site-header">
 	<section class="hero is-primary is-fullheight">
 		<div class="hero-head">
 			<nav class="navbar">
@@ -39,7 +39,7 @@
 			<nav class="tabs">
 				<div class="container">
 					<ul>
-						<li><a :href="githubUrl">Github</a></li>
+						<li><a :href="this.githubUrl" target="_blank" rel="noopener">Github</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -64,5 +64,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
