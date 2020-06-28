@@ -2,30 +2,21 @@
 <div id="Home" class="site-header">
 	<section class="hero is-primary is-fullheight">
 		<div class="hero-head">
-			<nav class="navbar">
-				<div class="container">
-					<div class="navbar-brand">
-						<a class="navbar-item">
-							<span>AR</span>
-						</a>
-						<span class="navbar-burger burger" data-target="navbarMenuHeroA">
-							<span></span>
-							<span></span>
-							<span></span>
-						</span>
-					</div>
-					<div id="navbarMenuHeroA" class="navbar-menu">
-						<div class="navbar-end">
-							<a href="#Home" class="navbar-item is-active">
-								Home
-							</a>
-							<a class="navbar-item">
-								Projects
-							</a>
-						</div>
-					</div>
-				</div>
-			</nav>
+			<b-navbar>
+				<template slot="brand">
+					<b-navbar-item tag="router-link" :to="{ path: '/' }">
+						AR
+					</b-navbar-item>
+				</template>
+				<template slot="end">
+					<b-navbar-item href="#Home">
+						Home
+					</b-navbar-item>
+					<b-navbar-item href="#Projects">
+						Projects
+					</b-navbar-item>
+				</template>
+			</b-navbar>
 		</div>
 
 		<div class="hero-body">
