@@ -22,10 +22,9 @@ export default {
 <style lang="scss">
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
-@import "~bulma/bulma.sass";
 
 // Set your colors
-$primary: red;
+$primary: #92A8D1;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
