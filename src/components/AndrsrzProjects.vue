@@ -48,6 +48,9 @@ $htmlfive: #E54E26;
 $htmlfive-invert: findColorInvert($htmlfive);
 $cssthree: #006EBA;
 $cssthree-invert: findColorInvert($cssthree);
+$foundation: #1779BA;
+$nes: #D7D7D7;
+$buefy: #7957D5;
 $javascript: #E7C72F;
 $javascript-invert: findColorInvert($javascript);
 $vue: #41B883;
@@ -89,6 +92,17 @@ li {
 }
 .CSS-3 {
 	background-color: $cssthree;
+	color: $white;
+}
+.Foundation {
+	background-color: $foundation;
+	color: $white;
+}
+.NES-CSS {
+	background-color: $nes;
+}
+.Buefy {
+	background-color: $buefy;
 	color: $white;
 }
 .JavaScript {

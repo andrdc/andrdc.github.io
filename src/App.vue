@@ -54,7 +54,7 @@ var webTicTacToe = new Project(
 	"Tic Tac Toe",
 	"https://andrsrz.github.io/tic-tac-toe/",
 	"Tic Tac Toe web game",
-	["HTML-5", "CSS-3", "JavaScript"],
+	["HTML-5", "CSS-3", "Foundation", "JavaScript"],
 	"Web"
 );
 myProjects.push(webTicTacToe);
@@ -63,7 +63,7 @@ var webLibrary = new Project(
 	"Library",
 	"https://andrsrz.github.io/library-vuejs/",
 	"Store books in your web browser and change its read status",
-	["HTML-5", "CSS-3", "JavaScript", "VueJS"],
+	["HTML-5", "CSS-3", "NES-CSS","JavaScript", "VueJS"],
 	"Web"
 );
 myProjects.push(webLibrary);
@@ -108,14 +108,14 @@ var webTyra = new Project(
 	"Tyra",
 	"https://andrsrz.github.io/tyra/",
 	"Veterinary Management",
-	["JavaScript"],
+	["HTML-5", "CSS-3", "Buefy", "JavaScript", "VueJS"],
 	"Web"
 );
 myProjects.push(webTyra);
 var cppPE = new Project(
 	"cppPE",
 	"Programming Exercises",
-	"https://andrsrz.github.io/pewebpage/",
+	"https://andrsrz.github.io/programming-exercises/",
 	"Learn C++ and improve your problem solving skill",
 	["Cpp"],
 	"C++"
