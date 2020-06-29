@@ -11,15 +11,6 @@ import AndrsrzProjects from './components/AndrsrzProjects.vue';
 import { Project } from './project.js';
 
 var myProjects = [];
-var cppPE = new Project(
-	"cppPE",
-	"Programming Exercises",
-	"https://andrsrz.github.io/pewebpage/",
-	"Learn C++ and improve your problem solving skill",
-	["C++"],
-	"C++"
-);
-myProjects.push(cppPE);
 var webRPSGame = new Project(
 	"webRPSGame",
 	"Rock, Paper, Scissors, Lizard, Spock",
@@ -29,6 +20,96 @@ var webRPSGame = new Project(
 	"Web"
 );
 myProjects.push(webRPSGame);
+var webEaS = new Project(
+	"webEaS",
+	"Etch a Sketch",
+	"https://andrsrz.github.io/etch-a-sketch/",
+	"Web drawing tool",
+	["HTML 5", "CSS 3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webEaS);
+var webCalc = new Project(
+	"webCalc",
+	"Calculator",
+	"https://andrsrz.github.io/calculator/",
+	"Web Calculator",
+	["HTML 5", "CSS 3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webCalc);
+var webPomodoro = new Project(
+	"webPomodoro",
+	"Pomodoro Timer",
+	"https://andrsrz.github.io/pomodoro/",
+	"Web Pomodoro Timer",
+	["HTML 5", "CSS 3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webPomodoro);
+var webEEMX = new Project(
+	"webEEMX",
+	"Equipo Eléctrico MX",
+	"https://equipoelectrico.com.mx",
+	"Webpage",
+	["HTML 5", "CSS 3", "JavaScript", "Apache 2"],
+	"Web"
+);
+myProjects.push(webEEMX);
+var webAlc = new Project(
+	"webAlc",
+	"Alcanum",
+	"https://alcanum.com",
+	"Veterinary Webpage",
+	["HTML 5", "CSS 3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webAlc);
+var webTyra = new Project(
+	"webTyra",
+	"Tyra",
+	"https://andrsrz.github.io/tyra/",
+	"Veterinary Management",
+	["JavaScript"],
+	"Web"
+);
+myProjects.push(webTyra);
+var cppPE = new Project(
+	"cppPE",
+	"Programming Exercises",
+	"https://andrsrz.github.io/pewebpage/",
+	"Learn C++ and improve your problem solving skill",
+	["C++"],
+	"C++"
+);
+myProjects.push(cppPE);
+var javaGraf = new Project(
+	"javaGraf",
+	"Graficas por Computadora 2D y 3D",
+	"https://github.com/Andrsrz/graficas-por-computadora-2D-3D/",
+	"Porjects and exercises from class. 6th Semester",
+	["Java"],
+	"Java"
+);
+myProjects.push(javaGraf);
+var javaCompPar = new Project(
+	"javaCompPar",
+	"Computación Paralela",
+	"https://github.com/Andrsrz/computacion-paralela/",
+	"Projects and exercises from class. 7th Semester",
+	["Java"],
+	"Java"
+);
+myProjects.push(javaCompPar);
+var pyIoT = new Project(
+	"pyIoT",
+	"Tecnologías Emergentes",
+	"https://github.com/Andrsrz/tecnologias-emergentes/",
+	"Projects and exercises from class. 8th Semester",
+	["Python", "Java", "Raspberry Pi", "AWS"],
+	"Python"
+);
+myProjects.push(pyIoT);
 
 export default {
 	name: 'App',
@@ -53,26 +134,6 @@ $primary: #92A8D1;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
-$htmlfive: #E54E26;
-$htmlfive-invert: findColorInvert($htmlfive);
-$cssthree: #006EBA;
-$cssthree-invert: findColorInvert($cssthree);
-$javascript: #E7C72F;
-$javascript-invert: findColorInvert($javascript);
-$apache: #AC0000;
-$apache-invert: findColorInvert($apache);
-$cpp: #017CC7;
-$cpp-invert: findColorInvert($cpp);
-$java: #EA2D2F;
-$java-invert: findColorInvert($java);
-$android: #3DDC84;
-$android-invert: findColorInvert($android);
-$python: #3873A3;
-$python-invert: findColorInvert($python);
-$berry: #C51D4A;
-$berry-invert: findColorInvert($berry);
-$aws: #E9912F;
-$aws-invert: findColorInvert($aws);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -85,17 +146,7 @@ $colors: (
 	"success": ($success, $success-invert),
 	"warning": ($warning, $warning-invert),
 	"danger": ($danger, $danger-invert),
-	"twitter": ($twitter, $twitter-invert),
-	"htmlfive": ($htmlfive, $htmlfive-invert),
-	"cssthree": ($cssthree, $cssthree-invert),
-	"javascript": ($javascript, $javascript-invert),
-	"apache": ($apache, $apache-invert),
-	"cpp": ($cpp, $cpp-invert),
-	"java": ($java, $java-invert),
-	"android": ($android, $android-invert),
-	"python": ($python, $python-invert),
-	"berry": ($berry, $berry-invert),
-	"aws": ($aws, $aws-invert)
+	"twitter": ($twitter, $twitter-invert)
 );
 
 // Links

@@ -21,8 +21,8 @@
 
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title">{{ this.name }}</h1>
-				<h2 class="subtitle">{{ this.title }}</h2>
+				<h1 class="title is-1">{{ this.name }}</h1>
+				<h2 class="subtitle is-2">{{ this.title }}</h2>
 			</div>
 		</div>
 
