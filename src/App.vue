@@ -16,7 +16,7 @@ var webRPSGame = new Project(
 	"Rock, Paper, Scissors, Lizard, Spock",
 	"https://andrsrz.github.io/rock-paper-scissors/",
 	"Web game implementing Rock, Paper, Scissors and a little more.",
-	["HTML 5", "CSS 3", "JavaScript"],
+	["HTML-5", "CSS-3", "JavaScript"],
 	"Web"
 );
 myProjects.push(webRPSGame);
@@ -25,7 +25,7 @@ var webEaS = new Project(
 	"Etch a Sketch",
 	"https://andrsrz.github.io/etch-a-sketch/",
 	"Web drawing tool",
-	["HTML 5", "CSS 3", "JavaScript"],
+	["HTML-5", "CSS-3", "JavaScript"],
 	"Web"
 );
 myProjects.push(webEaS);
@@ -34,7 +34,7 @@ var webCalc = new Project(
 	"Calculator",
 	"https://andrsrz.github.io/calculator/",
 	"Web Calculator",
-	["HTML 5", "CSS 3", "JavaScript"],
+	["HTML-5", "CSS-3", "JavaScript"],
 	"Web"
 );
 myProjects.push(webCalc);
@@ -43,7 +43,7 @@ var webPomodoro = new Project(
 	"Pomodoro Timer",
 	"https://andrsrz.github.io/pomodoro/",
 	"Web Pomodoro Timer",
-	["HTML 5", "CSS 3", "JavaScript"],
+	["HTML-5", "CSS-3", "JavaScript"],
 	"Web"
 );
 myProjects.push(webPomodoro);
@@ -52,7 +52,7 @@ var webEEMX = new Project(
 	"Equipo Eléctrico MX",
 	"https://equipoelectrico.com.mx",
 	"Webpage",
-	["HTML 5", "CSS 3", "JavaScript", "Apache 2"],
+	["HTML-5", "CSS-3", "JavaScript", "Apache"],
 	"Web"
 );
 myProjects.push(webEEMX);
@@ -61,7 +61,7 @@ var webAlc = new Project(
 	"Alcanum",
 	"https://alcanum.com",
 	"Veterinary Webpage",
-	["HTML 5", "CSS 3", "JavaScript"],
+	["HTML-5", "CSS-3", "JavaScript"],
 	"Web"
 );
 myProjects.push(webAlc);
@@ -79,7 +79,7 @@ var cppPE = new Project(
 	"Programming Exercises",
 	"https://andrsrz.github.io/pewebpage/",
 	"Learn C++ and improve your problem solving skill",
-	["C++"],
+	["Cpp"],
 	"C++"
 );
 myProjects.push(cppPE);
@@ -106,7 +106,7 @@ var pyIoT = new Project(
 	"Tecnologías Emergentes",
 	"https://github.com/Andrsrz/tecnologias-emergentes/",
 	"Projects and exercises from class. 8th Semester",
-	["Python", "Java", "Raspberry Pi", "AWS"],
+	["Python", "Android", "RaspberryPi", "AWS"],
 	"Python"
 );
 myProjects.push(pyIoT);

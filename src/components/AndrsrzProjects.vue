@@ -15,7 +15,7 @@
 			</div>
 			<div class="content">
 				<p>{{ project.description }}</p>
-				<li class="test" v-for="tech in project.tech" :key="tech">{{ tech }}</li>
+				<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
 			</div>
 		</div>
 	</div>
@@ -41,6 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$white: #FFF;
 $htmlfive: #E54E26;
 $htmlfive-invert: findColorInvert($htmlfive);
 $cssthree: #006EBA;
@@ -78,7 +79,42 @@ li {
 	list-style: none;
 	text-align: center;
 }
-.test {
-	background-color: $javascript !important;
+.HTML-5 {
+	background-color: $htmlfive;
+	color: $white;
+}
+.CSS-3 {
+	background-color: $cssthree;
+	color: $white;
+}
+.JavaScript {
+	background-color: $javascript;
+}
+.Apache {
+	background-color: $apache;
+	color: $white;
+}
+.Cpp {
+	background-color: $cpp;
+	color: $white;
+}
+.Java {
+	background-color: $java;
+	color: $white;
+}
+.Python {
+	background-color: $python;
+	color: $white;
+}
+.Android {
+	background-color: $android;
+}
+.RaspberryPi {
+	background-color: $berry;
+	color: $white;
+}
+.AWS {
+	background-color: $aws;
+	color: $white;
 }
 </style>
