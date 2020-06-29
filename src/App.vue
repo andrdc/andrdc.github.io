@@ -1,16 +1,19 @@
 <template>
 	<div id="app">
 		<AndrsrzHeader />
+		<AndrsrzProjects />
 	</div>
 </template>
 
 <script>
 import AndrsrzHeader from './components/AndrsrzHeader.vue';
+import AndrsrzProjects from './components/AndrsrzProjects.vue';
 
 export default {
 	name: 'App',
 	components: {
-		AndrsrzHeader
+		AndrsrzHeader,
+		AndrsrzProjects
 	},
 	data(){
 		return {
