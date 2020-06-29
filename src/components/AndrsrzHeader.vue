@@ -15,6 +15,9 @@
 					<b-navbar-item href="#Projects">
 						Projects
 					</b-navbar-item>
+					<b-navbar-item href="#ContactMe">
+						Contact Me
+					</b-navbar-item>
 				</template>
 			</b-navbar>
 		</div>

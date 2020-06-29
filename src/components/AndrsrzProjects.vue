@@ -48,6 +48,8 @@ $cssthree: #006EBA;
 $cssthree-invert: findColorInvert($cssthree);
 $javascript: #E7C72F;
 $javascript-invert: findColorInvert($javascript);
+$vue: #41B883;
+$vue-text: #35495E;
 $apache: #AC0000;
 $apache-invert: findColorInvert($apache);
 $cpp: #017CC7;
@@ -89,6 +91,10 @@ li {
 }
 .JavaScript {
 	background-color: $javascript;
+}
+.VueJS {
+	background-color: $vue;
+	color: $vue-text;
 }
 .Apache {
 	background-color: $apache;

@@ -2,12 +2,14 @@
 <div id="app">
 	<AndrsrzHeader />
 	<AndrsrzProjects v-bind:projects="this.projects" />
+	<AndrsrzFooter />
 </div>
 </template>
 
 <script>
 import AndrsrzHeader from './components/AndrsrzHeader.vue';
 import AndrsrzProjects from './components/AndrsrzProjects.vue';
+import AndrsrzFooter from './components/AndrsrzFooter.vue';
 import { Project } from './project.js';
 
 var myProjects = [];
@@ -47,6 +49,42 @@ var webPomodoro = new Project(
 	"Web"
 );
 myProjects.push(webPomodoro);
+var webTicTacToe = new Project(
+	"webTicTacToe",
+	"Tic Tac Toe",
+	"https://andrsrz.github.io/tic-tac-toe/",
+	"Tic Tac Toe web game",
+	["HTML-5", "CSS-3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webTicTacToe);
+var webLibrary = new Project(
+	"webLibrary",
+	"Library",
+	"https://andrsrz.github.io/library-vuejs/",
+	"Store books in your web browser and change its read status",
+	["HTML-5", "CSS-3", "JavaScript", "VueJS"],
+	"Web"
+);
+myProjects.push(webLibrary);
+var webTodo = new Project(
+	"webTodo",
+	"Todo App",
+	"https://andrsrz.github.io/todo-list/",
+	"Todo List web App",
+	["HTML-5", "CSS-3", "JavaScript"],
+	"Web"
+);
+myProjects.push(webTodo);
+var webWeather = new Project(
+	"webWeather",
+	"Weather Forecast App",
+	"https://andrsrz.github.io/weather-app/",
+	"Weather Forecast App consuming Openweather API",
+	["HTML-5", "CSS-3", "JavaScript", "VueJS"],
+	"Web"
+);
+myProjects.push(webWeather);
 var webEEMX = new Project(
 	"webEEMX",
 	"Equipo Eléctrico MX",
@@ -115,7 +153,8 @@ export default {
 	name: 'App',
 	components: {
 		AndrsrzHeader,
-		AndrsrzProjects
+		AndrsrzProjects,
+		AndrsrzFooter
 	},
 	data(){
 		return {
