@@ -1,13 +1,24 @@
 <template>
-	<div id="app">
-		<AndrsrzHeader />
-		<AndrsrzProjects />
-	</div>
+<div id="app">
+	<AndrsrzHeader />
+	<AndrsrzProjects v-bind:projects="this.projects" />
+</div>
 </template>
 
 <script>
 import AndrsrzHeader from './components/AndrsrzHeader.vue';
 import AndrsrzProjects from './components/AndrsrzProjects.vue';
+import { Project } from './project.js';
+
+var myProjects = [];
+var myProject = new Project(
+	"cppPE",
+	"Programming Exercises",
+	"https://andrsrz.github.io/pewebpage/",
+	"Learn C++ and improve your problem solving skill",
+	["C++"],
+	"C++");
+myProjects.push(myProject);
 
 export default {
 	name: 'App',
@@ -17,6 +28,7 @@ export default {
 	},
 	data(){
 		return {
+			projects: myProjects
 		}
 	}
 }
