@@ -3,10 +3,12 @@
 	<div class="card" v-for="project in projects" :key="project.id">
 		<div class="card-content">
 			<div class="media">
-				<div class="media-left image" @click="goToProject(project.url)" title="Go to project">
-					<figure class="image is-48x48">
-						<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-					</figure>
+				<div class="media-left" @click="goToProject(project.url)" title="Go to project">
+					<b-icon
+						class="fas fa-globe-americas"
+						size="is-large"
+						type="is-primary">
+					</b-icon>
 				</div>
 				<div class="media-content">
 					<p class="title is-4">{{ project.name }}</p>
@@ -74,7 +76,7 @@ $aws-invert: findColorInvert($aws);
 .card {
 	box-shadow: none !important;
 }
-.image {
+.icon {
 	cursor: pointer;
 }
 li {
