@@ -63,7 +63,7 @@ var webLibrary = new Project(
 	"Library",
 	"https://andrsrz.github.io/library-vuejs/",
 	"Store books in your web browser and change its read status",
-	["HTML-5", "NES-CSS", "VueJS"],
+	["NES-CSS", "VueJS"],
 	"Web"
 );
 myProjects.push(webLibrary);
@@ -81,7 +81,7 @@ var webWeather = new Project(
 	"Weather Forecast App",
 	"https://andrsrz.github.io/weather-app/",
 	"Weather Forecast App consuming Openweather API",
-	["HTML-5", "CSS-3", "VueJS"],
+	["CSS-3", "VueJS"],
 	"Web"
 );
 myProjects.push(webWeather);
