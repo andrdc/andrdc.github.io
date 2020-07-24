@@ -1,5 +1,14 @@
 <template>
 <div id="Projects" class="site-main">
+	<form>
+		<div class="field">
+			<div class="control">
+				<label class="checkbox">
+					<input type="checkbox" :checked=preview>Project Preview
+				</label>
+			</div>
+		</div>
+	</form>
 	<div class="card" v-for="project in projects" :key="project.id">
 		<div class="card-content link">
 			<div class="media">
@@ -35,6 +44,7 @@ export default {
 	},
 	data(){
 		return {
+			preview: true
 		}
 	},
 	methods: {
