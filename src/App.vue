@@ -54,7 +54,7 @@ var webTicTacToe = new Project(
 	"Tic Tac Toe",
 	"https://andrsrz.github.io/tic-tac-toe/",
 	"Tic Tac Toe web game",
-	["HTML-5", "CSS-3", "Foundation", "JavaScript"],
+	["HTML-5", "Foundation", "JavaScript"],
 	"Web"
 );
 myProjects.push(webTicTacToe);
@@ -63,7 +63,7 @@ var webLibrary = new Project(
 	"Library",
 	"https://andrsrz.github.io/library-vuejs/",
 	"Store books in your web browser and change its read status",
-	["HTML-5", "CSS-3", "NES-CSS","JavaScript", "VueJS"],
+	["HTML-5", "NES-CSS", "VueJS"],
 	"Web"
 );
 myProjects.push(webLibrary);
@@ -81,10 +81,19 @@ var webWeather = new Project(
 	"Weather Forecast App",
 	"https://andrsrz.github.io/weather-app/",
 	"Weather Forecast App consuming Openweather API",
-	["HTML-5", "CSS-3", "JavaScript", "VueJS"],
+	["HTML-5", "CSS-3", "VueJS"],
 	"Web"
 );
 myProjects.push(webWeather);
+var webBattleship = new Project(
+	"webBattleship",
+	"Battleship Clone",
+	"https://andrsrz.github.io/battleship/",
+	"Battleship Game PvCPU",
+	["Buefy", "VueJS"],
+	"Web"
+);
+myProjects.push(webBattleship);
 var webEEMX = new Project(
 	"webEEMX",
 	"Equipo Eléctrico MX",
@@ -108,7 +117,7 @@ var webTyra = new Project(
 	"Tyra",
 	"https://andrsrz.github.io/tyra/",
 	"Veterinary Management",
-	["HTML-5", "CSS-3", "Buefy", "JavaScript", "VueJS"],
+	["Buefy", "VueJS"],
 	"Web"
 );
 myProjects.push(webTyra);
