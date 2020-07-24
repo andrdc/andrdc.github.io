@@ -125,7 +125,7 @@ var cppPE = new Project(
 	"cppPE",
 	"Programming Exercises",
 	"https://andrsrz.github.io/programming-exercises/",
-	"Learn C++ and improve your problem solving skill",
+	"My C++ Course. Learn and improve your problem solving skill",
 	["Cpp"],
 	"C++"
 );
