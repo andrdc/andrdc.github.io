@@ -4,7 +4,7 @@
 		<div class="field">
 			<div class="control">
 				<label class="checkbox">
-					<input type="checkbox" :checked=preview>Project Preview
+					<input type="checkbox" :checked=preview v-model="preview">Project Preview
 				</label>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 				<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
 			</div>
 		</div>
-		<div class="page">
+		<div class="page" v-if=preview>
 			<iframe id="frame" :src=project.url></iframe>
 		</div>
 	</div>
