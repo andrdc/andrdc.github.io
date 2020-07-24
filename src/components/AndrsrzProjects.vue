@@ -1,11 +1,11 @@
 <template>
 <div id="Projects" class="site-main">
 	<div class="card" v-for="project in projects" :key="project.id">
-		<div class="card-content">
+		<div class="card-content link">
 			<div class="media">
 				<div class="media-left" @click="goToProject(project.url)" title="Go to project">
 					<b-icon
-						class="fas fa-globe-americas"
+						class="fas fa-rocket"
 						size="is-large"
 						type="is-primary">
 					</b-icon>
@@ -19,6 +19,9 @@
 				<p>{{ project.description }}</p>
 				<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
 			</div>
+		</div>
+		<div class="page">
+			<iframe id="frame" :src=project.url></iframe>
 		</div>
 	</div>
 </div>
@@ -138,5 +141,25 @@ li {
 .AWS {
 	background-color: $aws;
 	color: $white;
+}
+
+#frame {
+	width: 500px;
+	height: 1000px;
+	border: 2px solid black;
+	zoom: 0.50;
+	-moz-transform: scale(0.50);
+	-moz-transform-origin: 0 0;
+}
+
+.page{
+	display: none;
+	width: 100%;
+}
+
+.link:hover + .page,.page:hover{
+	display: block;
+	position: relative;
+	z-index: 100;
 }
 </style>
