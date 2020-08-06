@@ -103,6 +103,15 @@ var webEEMX = new Project(
 	"Web"
 );
 myProjects.push(webEEMX);
+var webInventory = new Project(
+	"webInventory",
+	"Inventory App",
+	"https://vet-inventory-andrsrzdc.herokuapp.com/",
+	"Web Inventory Application with CRUD methods and authentiation-like security.",
+	["VueJS", "JavaScript", "Buefy", "NodeJS", "ExpressJS", "MongoDB"],
+	"Web"
+);
+myProjects.push(webInventory);
 var webAlc = new Project(
 	"webAlc",
 	"Alcanum",

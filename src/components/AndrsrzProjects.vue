@@ -68,6 +68,11 @@ $javascript: #E7C72F;
 $javascript-invert: findColorInvert($javascript);
 $vue: #41B883;
 $vue-text: #35495E;
+$nodejs: #68A063;
+$expressjs: #FDFDFD;
+$expressjs-text: #535F69;
+$mongodb: #FFFFFF;
+$mongodb-text: #13AA52;
 $apache: #AC0000;
 $apache-invert: findColorInvert($apache);
 $cpp: #017CC7;
@@ -124,6 +129,18 @@ li {
 .VueJS {
 	background-color: $vue;
 	color: $vue-text;
+}
+.NodeJS {
+	background-color: $nodejs;
+	color: $white;
+}
+.ExpressJS {
+	background-color: $expressjs-text;
+	color: $expressjs;
+}
+.MongoDB {
+	background-color: $mongodb-text;
+	color: $mongodb;
 }
 .Apache {
 	background-color: $apache;
