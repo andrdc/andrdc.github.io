@@ -1,39 +1,37 @@
 <template>
-<div id="Projects" class="site-main">
-	<form>
-		<div class="field">
-			<div class="control">
-				<label class="checkbox">
-					<input type="checkbox" :checked=preview v-model="preview">Project Preview
-				</label>
+	<div class="site-container">
+		<form>
+			<div class="field">
+				<b-switch size="is-large" :checked=preview v-model="preview">Project Preview</b-switch>
 			</div>
-		</div>
-	</form>
-	<div class="card" v-for="project in projects" :key="project.id">
-		<div class="card-content link">
-			<div class="media">
-				<div class="media-left" @click="goToProject(project.url)" title="Go to project">
-					<b-icon
-						class="fas fa-rocket"
-						size="is-large"
-						type="is-primary">
-					</b-icon>
+		</form>
+		<div id="Projects" class="site-main">
+			<div class="card" v-for="project in projects" :key="project.id">
+				<div class="card-content link">
+					<div class="media">
+						<div class="media-left" @click="goToProject(project.url)" title="Go to project">
+							<b-icon
+								class="fas fa-rocket"
+								size="is-large"
+								type="is-primary">
+							</b-icon>
+						</div>
+						<div class="media-content">
+							<p class="title is-4">{{ project.name }}</p>
+							<p class="subtitle is-6">{{ project.type }}</p>
+						</div>
+					</div>
+					<div class="content">
+						<p>{{ project.description }}</p>
+						<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
+					</div>
 				</div>
-				<div class="media-content">
-					<p class="title is-4">{{ project.name }}</p>
-					<p class="subtitle is-6">{{ project.type }}</p>
+				<div class="page" v-if=preview>
+					<iframe id="frame" :src=project.url></iframe>
 				</div>
 			</div>
-			<div class="content">
-				<p>{{ project.description }}</p>
-				<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
-			</div>
-		</div>
-		<div class="page" v-if=preview>
-			<iframe id="frame" :src=project.url></iframe>
 		</div>
 	</div>
-</div>
 </template>
 
 <script>
@@ -87,6 +85,16 @@ $berry: #C51D4A;
 $berry-invert: findColorInvert($berry);
 $aws: #E9912F;
 $aws-invert: findColorInvert($aws);
+
+.site-container {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+form {
+	margin-top: 10px;
+}
 
 .site-main {
 	display: flex;
