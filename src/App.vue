@@ -123,10 +123,10 @@ var webAlc = new Project(
 myProjects.push(webAlc);
 var webTyra = new Project(
 	"webTyra",
-	"Tyra",
-	"https://andrsrz.github.io/tyra/",
-	"Veterinary Management",
-	["Buefy", "VueJS"],
+	"Tyra Web",
+	"https://github.com/Andrsrz/tyra-web",
+	"Veterinary Management Web Applciation (Schedule, Inventory, Clients, Staff). \nPassword Login, Token Auth to API Request. CRUD methods",
+	["VueJS", "JavaScript", "Buefy", "NodeJS", "ExpressJS", "MongoDB"],
 	"Web"
 );
 myProjects.push(webTyra);
