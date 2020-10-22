@@ -1,10 +1,5 @@
 <template>
 	<div class="site-container">
-		<form>
-			<div class="field">
-				<b-switch size="is-large" :checked=preview v-model="preview">Project Preview</b-switch>
-			</div>
-		</form>
 		<div id="Projects" class="site-main">
 			<div class="card" v-for="project in projects" :key="project.id">
 				<div class="card-content link">
@@ -25,9 +20,6 @@
 						<p>{{ project.description }}</p>
 						<li v-for="tech in project.tech" :key="tech" :class="tech">{{ tech }}</li>
 					</div>
-				</div>
-				<div class="page" v-if=preview>
-					<iframe id="frame" :src=project.url></iframe>
 				</div>
 			</div>
 		</div>
