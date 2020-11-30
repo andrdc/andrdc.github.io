@@ -41,11 +41,16 @@ div#me
 								target="_blank"
 								rel="noopener"
 								v-t="'code'" )
+						li
+							LocaleSwitcher
 </template>
 
 <script lang="js">
+import LocaleSwitcher from "@/components/LocaleSwitcher.vue";
+
 export default {
 	name: "Andrsrz",
+	components: { LocaleSwitcher },
 	data(){
 		return {
 			cetiUrl: process.env.VUE_APP_cetiUrl,
@@ -59,7 +64,7 @@ export default {
 			githubUrl: process.env.VUE_APP_githubUrl
 		}
 	}
-}
+};
 </script>
 
 <style scoped>
