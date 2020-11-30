@@ -78,10 +78,14 @@ export default {
 }
 
 a {
-  color: #FFF;
+  color: #D2386C;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   cursor: pointer;
+}
+
+a:hover {
+  color: #926AA6;
 }
 
 @media (max-width: 450px){
