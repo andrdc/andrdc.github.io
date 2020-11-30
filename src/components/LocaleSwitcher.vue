@@ -3,7 +3,6 @@ div.locale-switcher
 	select#locale( v-model="$i18n.locale" )
 		option( v-for="locale in locales" :key="locale.key" :value="locale.key" )
 			| {{ locale.label }}
-	label( for="locale" aria-label="Locale" )
 </template>
 
 <script lang="js">
