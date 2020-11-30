@@ -23,7 +23,7 @@ div#me
 				br
 				div
 					h3#what-i-do.is-size-4
-						| See my project at my
+						| See my projects at my
 						| <a :href="this.githubProfileUrl" target="_blank" rel="noopener"><em>GitHub</em></a>
 						| &#128187; profile
 						br
