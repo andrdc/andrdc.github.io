@@ -1,9 +1,11 @@
 <template lang="pug">
 div#me
 	section.hero.is-primary.is-fullheight
+		div.hero-head( style="margin: 10px; text-align: right;" )
+			LocaleSwitcher
 		div.hero-body
 			div.has-text-left
-				h1#title.is-size-1 {{ $t("name") }} &#127758; &#128039;
+				h1#title.is-size-2 {{ $t("name") }} &#127758; &#128039;
 				h2#subtitle.is-size-2( v-t="'title'" )
 			div.has-text-right
 				div
@@ -41,8 +43,6 @@ div#me
 								target="_blank"
 								rel="noopener"
 								v-t="'code'" )
-						li
-							LocaleSwitcher
 </template>
 
 <script lang="js">
