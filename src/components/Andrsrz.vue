@@ -7,6 +7,7 @@ div#me
 			div.has-text-left
 				h1#title.is-size-2 {{ $t("name") }} &#127758; &#128039;
 				h2#subtitle.is-size-2( v-t="'title'" )
+				<a :href="this.fiverrUrl" target="_blank" rel="noopener"><em>{{ $t("hireMe") }}</em></a>
 			div.has-text-right
 				div
 					h3#about-me.is-size-4
@@ -61,7 +62,8 @@ export default {
 			itchUrl: process.env.VUE_APP_itchUrl,
 			workshopUrl: process.env.VUE_APP_workshopUrl,
 			githubProfileUrl: process.env.VUE_APP_githubProfileUrl,
-			githubUrl: process.env.VUE_APP_githubUrl
+			githubUrl: process.env.VUE_APP_githubUrl,
+			fiverrUrl: process.env.VUE_APP_fiverrUrl
 		}
 	}
 };
