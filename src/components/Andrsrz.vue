@@ -7,7 +7,6 @@ div#me
 			div.has-text-left
 				h1#title.is-size-2 {{ $t("name") }} &#127758; &#128039;
 				h2#subtitle.is-size-2( v-t="'title'" )
-				<a :href="this.fiverrUrl" target="_blank" rel="noopener"><em>{{ $t("hireMe") }}</em></a>
 			div.has-text-right
 				div
 					h3#about-me.is-size-4
@@ -34,6 +33,8 @@ div#me
 						| <a :href="this.itchUrl" target="_blank" rel="noopener"><em>{{ $t("games") }}</em></a> /
 						| <a :href="this.workshopUrl" target="_blank" rel="noopener"><em>{{ $t("mods") }}</em></a>
 						| &#127918;
+					br
+					iframe(src="https://github.com/sponsors/Andrsrz/button" title="Sponsor Andrsrz" height="35" width="116" style="border: 0;")
 		div.hero-foot
 			nav.tabs
 				div.container
