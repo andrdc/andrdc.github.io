@@ -1,15 +1,15 @@
 <template lang="pug">
-div#app
-	Andrsrz
+#app
+  andrdc
 </template>
 
 <script lang="js">
-import Andrsrz from './components/Andrsrz.vue';
+import andrdc from './components/andrdc.vue';
 
 export default {
 	name: 'App',
 	components: {
-		Andrsrz
+		andrdc
 	}
 }
 </script>
@@ -21,21 +21,51 @@ export default {
 // Set your colors
 $primary: #363945;
 $primary-invert: findColorInvert($primary);
-$twitter: #4099FF;
+$twitter: #4099ff;
 $twitter-invert: findColorInvert($twitter);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
-	"white": ($white, $black),
-	"black": ($black, $white),
-	"light": ($light, $light-invert),
-	"dark": ($dark, $dark-invert),
-	"primary": ($primary, $primary-invert),
-	"info": ($info, $info-invert),
-	"success": ($success, $success-invert),
-	"warning": ($warning, $warning-invert),
-	"danger": ($danger, $danger-invert),
-	"twitter": ($twitter, $twitter-invert)
+  "white": (
+    $white,
+    $black,
+  ),
+  "black": (
+    $black,
+    $white,
+  ),
+  "light": (
+    $light,
+    $light-invert,
+  ),
+  "dark": (
+    $dark,
+    $dark-invert,
+  ),
+  "primary": (
+    $primary,
+    $primary-invert,
+  ),
+  "info": (
+    $info,
+    $info-invert,
+  ),
+  "success": (
+    $success,
+    $success-invert,
+  ),
+  "warning": (
+    $warning,
+    $warning-invert,
+  ),
+  "danger": (
+    $danger,
+    $danger-invert,
+  ),
+  "twitter": (
+    $twitter,
+    $twitter-invert,
+  ),
 );
 
 // Links
